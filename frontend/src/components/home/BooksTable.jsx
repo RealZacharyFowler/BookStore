@@ -9,7 +9,7 @@ const BooksTable = ({books}) => {
     <table className='w-full border-separate border-spacing-2' >
     <thead>
         <tr>
-            <th className='border border-slate-600 rounded-md'>No</th>
+            <th className='border border-slate-600 rounded-md max-md:hidden'>No</th>
             <th className='border border-slate-600 rounded-md'>Title</th>
             <th className='border border-slate-600 rounded-md max-md:hidden'>Author</th>
             <th className='border border-slate-600 rounded-md max-md:hidden'>Publish Year</th>
@@ -19,7 +19,7 @@ const BooksTable = ({books}) => {
     <tbody>
         {books.map((book, index) => (
             <tr key={book._id} className='h-8'>
-            <td className='border border-slate-700 rounded-md text-center'>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
                 {index + 1}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
